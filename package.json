@@ -1,35 +1,40 @@
 {
-  "name":"hubot-zoi",
-    "description":"you desc here",
-    "keywords":[
-      "keyword",
-      "keyword",
-      "keyword"
-      ],
-    "main":"./lib/hubot-zoi",
-    "author":"Uchio KONDO udzura@udzura.jp (http://udzura.jp/)",
-    "version":"0.0.1",
-    "engines":{
-      "node":"*"
-    },
-    "repository":{
-      "type":"git",
-      "url":"https://github.com/udzura/hubot-zoi.git"
-    },
-    "devDependencies":{
-      "mocha":">=0.14.1"
-    },
-    "bin":"./bin/hubot-zoi.js",
-    "bugs":{
-      "url":"https://github.com/udzura/hubot-zoi/issues"
-    },
-    "scripts":{
-      "test":"./node_modules/.bin/mocha"
-    },
-    "licenses":[
+  "name": "hubot-zoi",
+  "description": "Kyou-mo ichi-nichi ganbaru zoi!",
+  "keywords": [
+    "hubot",
+    "zoi",
+    "comic"
+  ],
+  "main": "./lib/hubot-zoi",
+  "author": "Uchio KONDO udzura@udzura.jp (http://udzura.jp/)",
+  "version": "0.0.1",
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udzura/hubot-zoi.git"
+  },
+  "devDependencies": {
+    "mocha": ">=0.14.1"
+  },
+  "bin": "./bin/hubot-zoi.js",
+  "bugs": {
+    "url": "https://github.com/udzura/hubot-zoi/issues"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "licenses": [
     {
-      "type":"MIT",
-      "url":"https://github.com/udzura/hubot-zoi/raw/master/LICENSE"
+      "type": "MIT",
+      "url": "https://github.com/udzura/hubot-zoi/raw/master/LICENSE"
     }
-  ]
+  ],
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "hubot": "^2.8.0",
+    "request": "^2.39.0"
+  }
 }
