@@ -6,7 +6,6 @@
     "zoi",
     "comic"
   ],
-  "main": "./lib/hubot-zoi",
   "author": "Uchio KONDO udzura@udzura.jp (http://udzura.jp/)",
   "version": "0.0.1",
   "engines": {
@@ -19,7 +18,6 @@
   "devDependencies": {
     "mocha": ">=0.14.1"
   },
-  "bin": "./bin/hubot-zoi.js",
   "bugs": {
     "url": "https://github.com/udzura/hubot-zoi/issues"
   },
