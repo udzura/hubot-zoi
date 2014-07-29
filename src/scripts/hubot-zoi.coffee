@@ -17,7 +17,7 @@ getZois = (cb) ->
       cb.onError(err)
     else
       zois = body.match(/image: 'https:\/\/pbs.twimg.com\/media\/.+.jpg:large'/mg).
-                  map((l) -> l.match("'(.+)'")[1])
+                  map((l) -> l.match("'(https.+\.jpg):large'")[1])
       (cb.onZoi || cb.onSuccess)(zois)
   )
 
