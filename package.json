@@ -30,6 +30,7 @@
       "url": "https://github.com/udzura/hubot-zoi/raw/master/LICENSE"
     }
   ],
+  "main": "./src/index.coffee",
   "dependencies": {
     "coffee-script": "^1.7.1",
     "hubot": "^2.8.0",
