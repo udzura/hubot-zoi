@@ -25,8 +25,8 @@ getZois = (cb) ->
     if err
       cb.onError(err)
     else
-      zois = body.match(/image: ['"]?https?:\/\/.+.(jpg|png|gif).*["']?/mg).
-                  map((l) -> l.match("'(https.+\.jpg):large'")[1])
+      zois = body.match(/image: ['"]?https?:\/\/.+\.(jpg|png|gif).*["']?/mg).
+                  map((l) -> l.match(/(https?:\/\/.+\.(?:jpg|png|gif))/)[1])
       (cb.onZoi || cb.onSuccess)(zois)
   )
 
