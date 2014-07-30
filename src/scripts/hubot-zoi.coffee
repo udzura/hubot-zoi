@@ -1,8 +1,8 @@
 # Description:
-#   今日も一日頑張るぞい！
+#   今日も一日がんばるぞい！
 #
 # Commands:
-#   hubot zoi - 今日も一日頑張る
+#   hubot zoi - 今日も一日がんばる
 #
 # Configuration:
 #   HUBOT_ZOI_SOURCE_URL
@@ -34,5 +34,5 @@ module.exports = (robot) ->
   robot.respond /zoi/i, (msg) ->
     getZois
       onZoi: (zois) -> msg.send msg.random zois
-      onError: (err) -> msg.send "頑張れなかった...: #{err}"
+      onError: (err) -> msg.send "がんばれなかった...: #{err}"
     
