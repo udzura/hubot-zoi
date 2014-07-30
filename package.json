@@ -7,7 +7,7 @@
     "comic"
   ],
   "author": "Uchio KONDO udzura@udzura.jp (http://udzura.jp/)",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "engines": {
     "node": "*"
   },
