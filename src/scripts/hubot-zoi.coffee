@@ -13,10 +13,14 @@
 
 request = require 'request'
 uri     = process.env.HUBOT_ZOI_SOURCE_URL
+zois    = false
 
 throw new Error('Please set HUBOT_ZOI_SOURCE_URL env') unless uri?
 
 getZois = (cb) ->
+  if zois
+    (cb.onZoi || cb.onSuccess)(zois)
+    return
   request(uri, (err, response, body) ->
     if err
       cb.onError(err)
