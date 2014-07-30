@@ -4,12 +4,17 @@
 # Commands:
 #   hubot zoi - 今日も一日頑張る
 #
+# Configuration:
+#   HUBOT_ZOI_SOURCE_URL
+#
 # Author:
 #   Uchio KONDO
 
 
 request = require 'request'
-uri     = 'http://zoi.herokuapp.com/js/services.js'
+uri     = process.env.HUBOT_ZOI_SOURCE_URL
+
+throw new Error('Please set HUBOT_ZOI_SOURCE_URL env') unless uri?
 
 getZois = (cb) ->
   request(uri, (err, response, body) ->
